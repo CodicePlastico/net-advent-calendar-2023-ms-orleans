@@ -1,0 +1,25 @@
+﻿
+### OPEN TABLE ORDER
+POST https://localhost:7021/restaurants/262d47be-d6e0-40e5-bb3e-71dfc5b018ce/tables/78
+
+### CLOSE TABLE ORDER
+DELETE https://localhost:7021/restaurants/262d47be-d6e0-40e5-bb3e-71dfc5b018ce/tables/78
+
+### GET TABLE ORDER
+GET https://localhost:7021/restaurants/262d47be-d6e0-40e5-bb3e-71dfc5b018ce/tables/78
+
+### ADD NEW ITEM TO TABLE ORDER 
+POST https://localhost:7021/restaurants/262d47be-d6e0-40e5-bb3e-71dfc5b018ce/tables/78/orders
+Content-Type: application/json
+
+{
+   "Name": "Pizza",
+   "Cost": 7.8,
+   "Quantity": 2
+}
+
+### GET ORDER ITEM DETAILS
+GET https://localhost:7021/restaurants/262d47be-d6e0-40e5-bb3e-71dfc5b018ce/tables/78/orders/bab4e43e-58ae-4903-b72b-5590088a3514
+
+### REMOVE ORDER ITEM
+DELETE https://localhost:7021/restaurants/262d47be-d6e0-40e5-bb3e-71dfc5b018ce/tables/78/orders/bcb89d90-eb76-447d-9945-d322e3b4cfe1
